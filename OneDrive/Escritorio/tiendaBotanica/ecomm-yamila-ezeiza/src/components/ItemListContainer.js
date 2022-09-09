@@ -1,9 +1,9 @@
-
-const ItemListContainer=() =>{
-    return (
-      <>
-      <h2 className="text-center"> Bienvenida/o a Tienda botánica!</h2>
-      </>
+import React from "react"
+const ItemListContainer=({greeting}) =>{
+    return ( 
+      <div>
+     {greeting}
+      </div>
     );
   }
 export default ItemListContainer;
