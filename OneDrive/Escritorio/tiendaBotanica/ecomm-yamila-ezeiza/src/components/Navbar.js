@@ -4,7 +4,7 @@ import CartWidget from "../components/CartWidget.js"
 const Navbar=()=>{
     return(
         <>
-        <nav className="navbar navbar-expand-lg navbar-warning bg-warning " id="botonera">
+        <nav className="navbar navbar-expand-lg navbar-warning " id="botonera">
   <div className="container-fluid">
     <div className="navbar-brand logo" >Tienda botánica</div>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
