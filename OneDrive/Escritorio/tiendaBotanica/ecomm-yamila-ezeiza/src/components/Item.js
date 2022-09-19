@@ -1,5 +1,5 @@
-import React from "react"
-
+import React from "react";
+import {Link} from "react-router-dom";
 function Item({id,title,img,price, description}){
     return(
         < div className="card" id={id} style={{width: '1,5 rem'}}>
@@ -10,7 +10,7 @@ function Item({id,title,img,price, description}){
 <h3 className="card-title">{title}</h3>
 <p className="card-text">Descripción:{description}</p>
 <p className="card-text">Precio: ${price}</p>
-<button type="button" className="btn btn-primary"> Agregar al carrito</button>
+<Link to={`/item/${id}`}><button type="button" className="btn btn-primary"> Detalle del producto</button> </Link>
 </div>
         </div>
     )
