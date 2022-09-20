@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 function Item({id,title,img,price, description}){
     return(
-        < div className="card" id={id} style={{width: '1,5 rem'}}>
+        < div className="card" id={id}>
 <div>
     <img src={img} className="card-img-top" alt={title}/>
     </div>

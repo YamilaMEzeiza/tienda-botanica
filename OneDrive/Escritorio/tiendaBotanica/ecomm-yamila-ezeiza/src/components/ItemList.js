@@ -5,6 +5,7 @@ function ItemList ({data}){
     return (
        <div id="itemList">
        {data.map(product=>(< Item key= {product.id}
+        id={product.id}
         title={product.title}
         img={product.img}
           description={product.description}

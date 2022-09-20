@@ -75,9 +75,9 @@ button{
     display: flex;
     align-items:center;
     justify-content: center;
-    max-height: 25rem;
-    min-height: 25rem;
-    padding: 0 1rem;
+   height:auto;
+    width:30rem;
+    padding:2rem;
     border: 2px solid #cccccc;
     box-shadow:
         1px 1px 41px rgba(0, 0, 0, 0.2);
