@@ -1,6 +1,6 @@
 import { useState } from "react"
 const ItemCount=({initial,stock})=>{
-const [itemCount,setItemCount]=useState(1) 
+const [itemCount,setItemCount]=useState(initial) 
 const sumar=()=>{
     setItemCount(itemCount +1)
 } 
@@ -9,7 +9,7 @@ const restar=()=>{
 } 
 const agregarAlCarrito=()=>{
     setItemCount(itemCount)
-    console.log("Producto agregado")
+   
 } 
 
     return (

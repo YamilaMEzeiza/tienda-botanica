@@ -6,6 +6,7 @@ const products=[{
     price:590,
     id:1,
     categoryId:"1",
+    stock:12,
 },
 {
     title:"CACTUS",
@@ -15,6 +16,7 @@ const products=[{
     price:350,
     id:2,
     category:"1",
+    stock:13,
 },
 {
     title:"SEMILLAS AROMÁTICAS",
@@ -24,6 +26,7 @@ const products=[{
     price:190,
     id:3,
     category:"3",
+    stock:15,
 },
 {
     title:"FRUTILLA",
@@ -33,6 +36,7 @@ const products=[{
     price:240,
     id:4,
     category:"2",
+    stock:23,
 },
 {
     title:"JAZMÍN DEL CABO",
@@ -42,6 +46,7 @@ const products=[{
     price:1090,
     id:5,
     category:"1",
+    stock:28,
 },
 {
     title:"VERÓNICA RUBRA",
@@ -51,5 +56,6 @@ const products=[{
     price:730,
     id:6,
     category:"1",
+    stock:30,
 }]
 export default products
