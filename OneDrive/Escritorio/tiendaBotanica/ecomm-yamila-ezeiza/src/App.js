@@ -3,12 +3,15 @@ import Navbar from './components/Navbar.js';
 import ItemListContainer from './components/ItemListContainer.js';
 import ItemDetailContainer from './components/ItemDetailContainer.js';
 import Cart from './components/Cart.js';
+
 import Footer from './components/Footer.js';
 
 
 const App=() =>{
   return (
-    <BrowserRouter>
+    
+   
+      <BrowserRouter>
      <Navbar/>
      <Routes>
      <Route path='/' element={<ItemListContainer/>}/> 
@@ -17,6 +20,7 @@ const App=() =>{
      <Route path='/cart' element={<Cart/>}/> 
      </Routes>
     </BrowserRouter>
+    
   );
 }
 
