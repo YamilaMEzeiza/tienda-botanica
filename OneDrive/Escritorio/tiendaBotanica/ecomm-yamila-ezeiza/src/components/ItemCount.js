@@ -15,7 +15,7 @@ const restar=()=>{
       <span> {itemCount} </span>
       <button onClick= {()=>restar()} >  - </button>
       <br/>
-      <button onClick= {()=>onAdd()}>  Agregar al carrito </button>
+      <button onClick= {()=>onAdd(itemCount)}>  Agregar al carrito </button>
       
       </>
     );

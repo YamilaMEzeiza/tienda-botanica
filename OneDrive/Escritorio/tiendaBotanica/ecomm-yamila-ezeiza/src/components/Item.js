@@ -10,7 +10,7 @@ function Item({id,title,img,price, description}){
 <h3 className="card-title">{title}</h3>
 <p className="card-text">Descripción:{description}</p>
 <p className="card-text">Precio: ${price}</p>
-<Link to={`/item/${id}`}><button type="button" className="btn btn-primary"> Detalle del producto</button> </Link>
+<Link to={`/item/${id}`}><button type="button" > Detalle del producto</button> </Link>
 </div>
         </div>
     )

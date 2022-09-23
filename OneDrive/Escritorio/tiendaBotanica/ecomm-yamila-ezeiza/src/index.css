@@ -19,8 +19,9 @@ code {
  border-radius: 0.5rem;
 }
 #logo{
+  text-decoration: none;
   font-family: 'Great Vibes', cursive;
-  color:antiquewhite;
+  color:rgb(247, 221, 187);
   font-size: 2rem;
 }
 
@@ -123,4 +124,14 @@ button{
 }
 .detail-img-top {
   margin: 2rem;
+}
+.carts{
+  margin-top:2rem;
+margin-left:4rem;
+  height:100%;
+  width:100%;
+
+}
+h2{
+  text-align:center;
 }
