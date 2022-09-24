@@ -16,15 +16,16 @@ const Cart=()=>{
                 <td>
                 <img src={product.img} className="detail-img-top" alt={product.title}/>
                 </td>
-                <div className="detail-body">
             <td className="detail-title">{product.title}</td>
+            
             <td className="detail-text">Precio: ${product.price}</td>
             <td><span id="quantity">Cantidad:{product.quantity}</span></td> 
-            <button onClick={()=>ctx.removeItem(product.id)}>Eliminar producto</button></div></tr> </div>)
+            <button onClick={()=>ctx.removeItem(product.id)}>Eliminar producto</button></tr> </div>)
             }
          </table>
         </div>
-        </div>
+         </div>
+        
         </>
     )
 }

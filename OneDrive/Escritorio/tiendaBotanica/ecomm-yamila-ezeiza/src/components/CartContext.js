@@ -11,14 +11,14 @@ const CartContextProvider=({children})=>{
    }
    
         
-    const addItem=(item,quantity)=>{
-    if(isInCart(item.id)){
+    const addItem=(prod,quantity)=>{
+    if(isInCart(prod.id)){
              setCartList(cartList.map(product=>{ 
-                return product.id ===item.id ? {...product,quantity: product.quantity+quantity}:product
+                return product.id ===prod.id ? {...product,quantity: product.quantity+quantity}:product
                 }));
              }else{
                
-                setCartList([...cartList,{...item,quantity}])
+                setCartList([...cartList,{...prod,quantity}])
              }
        
                 }

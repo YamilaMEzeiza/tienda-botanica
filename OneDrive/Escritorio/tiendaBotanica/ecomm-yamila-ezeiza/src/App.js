@@ -19,6 +19,7 @@ const App=() =>{
      <Route path='/item/:id' element={<ItemDetailContainer />}/> 
      <Route path='/cart' element={<Cart/>}/> 
      </Routes>
+     <Footer/>
     </BrowserRouter>
     </CartContextProvider>
   );
