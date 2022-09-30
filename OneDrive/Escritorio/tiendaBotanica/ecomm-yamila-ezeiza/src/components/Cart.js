@@ -1,7 +1,37 @@
+import { serverTimestamp, doc, setDoc,collection, updateDoc,increment } from "firebase/firestore";
+import  db from "../utils/firebaseConfig";
 import { useContext } from "react"
 import { CartContext } from "./CartContext";
 const Cart=()=>{
   const ctx=  useContext(CartContext);
+  const itemsDb=ctx.cartList.map(item=>({
+    id:item.id,
+    title:item.title,
+    price:item.price,
+    quantity:item.quantity,
+  }))
+  const createOrder= async() =>{
+    let order={
+        buyer:{
+            name:"Lizzy Tagliani",
+            email:"lizzy@gmail.com",
+            phone:"12345678"
+        },
+        items:itemsDb,
+        date: serverTimestamp(),
+        total:ctx.priceTotal(),
+    }
+    const newOrder=doc(collection(db,"orders"))
+    await setDoc(newOrder, order);
+    ctx.cartList.forEach(async(item) => {
+        const itemRef = doc(db, "products", item.id);
+await updateDoc(itemRef, {
+ stock:increment(-item.quantity) 
+});
+    });
+    ctx.clear()
+    alert('Your order has been created! This is your ID\'s order:' +newOrder.id)
+  }
     
    if (ctx.cartList.length===0){
     return (<>
@@ -49,11 +79,15 @@ const Cart=()=>{
           <div class= "d-flex align-items-center h-100 border-bottom pb-2 pt-3">
               <h4 className="text-truncate ml-3 mb-0 text-right">Subtotal: $ {ctx.priceTotal()}</h4>
           </div>
+        
       </div>
       <div class="col-12">
           <div className=" d-flex align-items-center h-100 border-bottom pb-2 pt-3">
           <h3 className="text-truncate ml-3 mb-0">Total : $ {ctx.priceTotal()}</h3>
           </div>
+          <div>
+           <button onClick={createOrder}>Finalizar compra</button>
+           </div>
       </div>
     
       </div>
