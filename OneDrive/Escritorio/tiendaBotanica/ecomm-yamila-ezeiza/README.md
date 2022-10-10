@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 =======
 # Tienda botánica E-Commerce
 
@@ -8,19 +8,19 @@ Proyecto  creado luego de realizar distintos desafios para curso de React.js bri
 
   ### Instalación
 
--Clonar el repositorio - git clone https://github.com/YamilaMEzeiza/tiendaBotanica-EzeizaYamila
--Instalar las dependencias - npm install
--Ejecutar el proyecto - npm start
+-Clonar el repositorio - git clone https://github.com/YamilaMEzeiza/tiendaBotanica-EzeizaYamila,
+-Instalar las dependencias - npm install,
+-Ejecutar el proyecto - npm start.
 
 ### Construido mediante:
 React.js 
-JavaScript 
-React-icons
-React-Router-Dom 
+-JavaScript 
+-React-icons
+-React-Router-Dom 
 
 
 ### Autora
 
 Yamila Micaela Ezeiza
 
->>>>>>> af3026f51350498bd8dc7edcf628883a74b1a212
+
